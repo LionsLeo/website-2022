@@ -1,0 +1,62 @@
+/*importing all fonts*/
+@font-face {
+    font-family: "SourceSansProBlack";
+    src: url(../fonts/SourceSansPro-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProBlackItalic";
+    src: url(../fonts/SourceSansPro-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProBold";
+    src: url(../fonts/SourceSansPro-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProBoldItalic";
+    src: url(../fonts/SourceSansPro-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProExtraLight";
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProExtraLightItalic";
+    src: url(../fonts/SourceSansPro-ExtraLightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProItalic";
+    src: url(../fonts/SourceSansPro-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProLight";
+    src: url(../fonts/SourceSansPro-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProLightItalic";
+    src: url(../fonts/SourceSansPro-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProRegular";
+    src: url(../fonts/SourceSansPro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProSemiBold";
+    src: url(../fonts/SourceSansPro-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansProSemiBoldItalic";
+    src: url(../fonts/SourceSansPro-SemiBoldItalic.ttf) format("truetype");
+}
+
+
