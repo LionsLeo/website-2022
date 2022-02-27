@@ -59,4 +59,225 @@
     src: url(../fonts/SourceSansPro-SemiBoldItalic.ttf) format("truetype");
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+html{
+    font-size: 10px;
+    font-family: "SourceSansProSemiBold", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Hero Section*/
+#hero{
+    background-image: url("../assets/hero-bg.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #161C2C;
+    opacity: 0.9; /*currently set to 0.9 for image*/
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: #F9982F;
+}
+
+#hero p{
+    display: block;
+    width: fit-content;
+    max-width: 500px;
+    font-size: 1.5rem;
+    font-family: "SourceSansProRegular";
+    position: relative;
+    color: #F9982F;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #F9982F;
+    background-color: transparent;
+    border: 2px solid #F9982F;
+    border-radius: 15px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+#hero .cta:hover{
+    color: white;
+    background-color: #F9982F;
+}
+/*End Hero Section*/
+
+/*Events styling*/
+#services .service{
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-family: "SourceSansProBold";
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+/*Events styling*/
+
+/*Cards Styling*/
+.card-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.card-container .cards 
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#2196f3,#2196f3 30%, #1d3548 30%, #1d3548);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-container .cards .imgBx 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    border-radius: 20px;
+    overflow: hidden;
+    transform-origin: top;
+}
+.card-container .cards:hover .imgBx 
+{
+    transform: translateY(30px) scale(0.5);
+}
+.card-container .cards .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-container .cards .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.card-container .cards:hover .content
+{
+    transform: translateY(0);
+}
+.card-container .cards .content .details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.card-container .cards .content .details h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.card-container .cards .content .details h2 span
+{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #03a9f4;
+}
+.social_icons
+{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+.social_icons li
+{
+    list-style: none;
+    margin: 4px;
+}
+.social_icons li a
+{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294d69;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.social_icons li a:hover
+{
+    background: #03a9f4;
+}
+/*End Cards Styling*/
