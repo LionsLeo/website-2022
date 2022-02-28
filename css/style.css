@@ -421,6 +421,71 @@ a{
 }
 /*End Cards Styling*/
 
+/*Parvaah Page Styling*/
+.parvaah-container{
+    padding-top: 100px;
+    width: fit-content;
+    text-align: center;
+}
+.parvaah-logo img{
+    padding: 0 25px;
+    width: 300px;
+}
+.parvaah-desc p{
+    font-size: 25px;
+    padding: 50px 100px;
+    font-family: "SourceSansProSemiBold";
+}
+.voluteen-btn{
+    margin: auto;
+    width: 15%;
+    border: 3px solid green;
+    border-radius: 15px;
+    padding: 10px;
+    transition: .3s ease background-color;
+}
+.voluteen-btn:hover{
+    background-color: black;
+    color: white;
+}
+.voluteen-btn a{
+    font-size: 25px;
+    color: green;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+}
+.event-card{
+    background-color: grey;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.event-card h1{
+    padding: 1px 10px;
+    font-size: 25px;
+    font-family: "SourceSansProSemiBold";
+}
+.event-card p{
+    padding: 1px 10px;
+    font-size: 15px;
+    font-family: "SourceSansProRegular";
+}
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.car-1{
+    background-image: url('../assets/ecorun_2019.png');
+}
+/*End Parvaah Page Styling*/
+
 /*Keyframes*/
 @keyframes hamburger_pulse {
     0%{
@@ -455,6 +520,23 @@ a{
     }
     #header .nav-list ul a:after{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .parvaah-desc p{
+        font-size: 20px;
+        padding: 50px 50px;
+    }
+    .parvaah-logo img{
+        padding: 20px 25px;
+        width: 250px;
+    }
+    .voluteen-btn{
+        width: 50%;
+    }
+    .parvaah-container{
+        padding-top: 50px;
     }
 }
 /*End Media Query for Desktop*/
