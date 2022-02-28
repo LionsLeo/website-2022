@@ -269,6 +269,7 @@ a{
 #hero .cta{
     display: inline-block;
     padding: 10px 30px;
+    margin-right: 20px;
     color: #F9982F;
     background-color: transparent;
     border: 2px solid #F9982F;
@@ -536,7 +537,10 @@ a{
         width: 50%;
     }
     .parvaah-container{
-        padding-top: 50px;
+        padding-top: 70px;
+    }
+    #hero p{
+        font-size: 1rem;
     }
 }
 /*End Media Query for Desktop*/
