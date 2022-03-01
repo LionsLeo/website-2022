@@ -520,6 +520,7 @@ a{
 }
 .rup-card{
     padding: 10px 10px;
+    z-index: 1;
 }
 .rup-card .socialmedia{
     padding: 10px 10px;
