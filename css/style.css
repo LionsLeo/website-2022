@@ -487,6 +487,56 @@ a{
 }
 /*End Parvaah Page Styling*/
 
+/* Reach Us Page Styling*/
+#rup-body{
+    background-color: #03a9f4;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#reach-us .reach-us-page{ 
+    margin: 0 auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rup-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#reach-us .sector{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+#reach-us .sector h1{
+    font-size: 40px;
+    font-family: "SourceSansProBlack";
+}
+.rup-card{
+    padding: 10px 10px;
+}
+.rup-card .socialmedia{
+    padding: 10px 10px;
+    text-align: center;
+}
+.rup-card .socialmedia img{
+    margin: 0 10px;
+}
+.rup-card .tagline{
+    text-align: center;
+}
+.rup-card .tagline h2{
+    font-size:18px;
+    font-family: "SourceSansProItalic";
+}
+/*End Reach Us Page Styling*/
+
 /*Keyframes*/
 @keyframes hamburger_pulse {
     0%{
