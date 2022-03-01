@@ -71,6 +71,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -538,6 +542,41 @@ a{
 }
 /*End Reach Us Page Styling*/
 
+/*Rules styling*/
+#rules .rules-content{
+    flex-direction: column;
+    max-width: 1500px;
+    padding-top: 100px;
+}
+#rules .rules-title{
+    font-size: 5rem;
+    font-family: "SourceSansProBold";
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.rule-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#rules .rules-content .service-top{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 80px;
+}
+#rules .rules-content .content{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+#rules .rules-content .content ul li{
+    font-size: 2rem;
+    font-family: "SourceSansProRegular";
+}
+/* End Rules styling*/
+
 /*Keyframes*/
 @keyframes hamburger_pulse {
     0%{
@@ -592,6 +631,21 @@ a{
     }
     #hero p{
         font-size: 1rem;
+    }
+    #hero{
+        background-image: url("../assets/mwallpaper2.png");
+    }
+    #rules .rules-content .content ul li{
+        font-size: 1.5rem;
+    }
+    #rules .rules-content .service-top{
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+    #rules .rules-content .content{
+        padding-left: 60px;
+        padding-right: 40px;
+        padding-bottom: 50px;
     }
 }
 /*End Media Query for Desktop*/
