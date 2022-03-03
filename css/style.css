@@ -544,12 +544,21 @@ a{
 .rup-card .socialmedia img{
     margin: 0 10px;
 }
+.rup-card .name{
+    text-align: center;
+}
+.rup-card .name h1{
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: "SourceSansProBold";
+}
 .rup-card .tagline{
     text-align: center;
 }
 .rup-card .tagline h2{
     font-size:18px;
     font-family: "SourceSansProItalic";
+    padding-bottom: 10px;
 }
 /*End Reach Us Page Styling*/
 
