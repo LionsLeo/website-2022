@@ -12,6 +12,12 @@
 </head>
 <body id="rup-body">
 
+    <!--PreLoader-->
+    <div id="preloader">
+        <h1>Loading...</h1>
+    </div>
+    <!--End PreLoader-->
+    
     <!--Header-->
     <section id="header">
         <div class="header container">
@@ -90,6 +96,12 @@
     <!--End Hero Section-->
 
     <script src="../js/app.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
     <script type="text/javascript" language="javascript">
 
         $('#sahil-card').hover(function () {

@@ -12,6 +12,12 @@
 </head>
 <body>
 
+    <!--PreLoader-->
+    <div id="preloader">
+        <h1>Loading...</h1>
+    </div>
+    <!--End PreLoader-->
+
     <!--Header-->
     <section id="header">
         <div class="header container">
@@ -92,5 +98,11 @@
     </section>
     <!--Events Section-->
     <script src="../js/app.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 </html>
