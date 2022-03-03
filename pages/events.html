@@ -201,11 +201,13 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script>
-    TweenMax.from('.tl',2,{left:-500,top:-500,opacity:0})
-    TweenMax.from('.tr',2,{left:500,top:-500,opacity:0})
-    TweenMax.from('.bl',2,{left:-500,top:500,opacity:0})
-    TweenMax.from('.br',2,{left:500,top:500,opacity:0})
-    TweenMax.from('.heading',2,{top:500,opacity:0})
+    window.onload(
+    TweenMax.from('.tl',2,{left:-500,top:-500,opacity:0}),
+    TweenMax.from('.tr',2,{left:500,top:-500,opacity:0}),
+    TweenMax.from('.bl',2,{left:-500,top:500,opacity:0}),
+    TweenMax.from('.br',2,{left:500,top:500,opacity:0}),
+    TweenMax.from('.heading',2,{top:500,opacity:0}),
     TweenMax.from('.btn',2,{top:500,opacity:0})
+    )
 </script>
 </html>
