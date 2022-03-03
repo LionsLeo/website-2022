@@ -577,6 +577,55 @@ a{
 }
 /* End Rules styling*/
 
+/*Events Page Styling*/
+table{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+table tr td{
+    width: 33.33%;
+    height: 33.33%;
+}
+.events-data .heading{
+    font-family: "SourceSansProBold";
+    font-size: 50px;
+    padding: 10px 10px;
+}
+.events-data .btn{
+    font-family: "SourceSansProBold";
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 40px;
+    transition: 0.3s ease background-color,color;
+}
+.events-data .btn:hover{
+    background-color: black;
+    color: white;
+}
+.tl{
+    position: relative;
+}
+.tr{
+    position: relative;
+}
+.bl{
+    position: relative;
+}
+.br{
+    position: relative;
+}
+.heading{
+    position: relative;
+}
+.btn{
+    position: relative;
+}
+/*End Events Page Styling*/
+
 /*Keyframes*/
 @keyframes hamburger_pulse {
     0%{
@@ -646,6 +695,16 @@ a{
         padding-left: 60px;
         padding-right: 40px;
         padding-bottom: 50px;
+    }
+    .events-data .heading{
+        font-size: 40px;
+    }
+    .events-data .btn{
+        font-size: 20px;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 0 20px;
     }
 }
 /*End Media Query for Desktop*/
