@@ -441,21 +441,32 @@ a{
     padding: 50px 100px;
     font-family: "SourceSansProSemiBold";
 }
-.voluteen-btn{
-    margin: auto;
-    width: 15%;
-    border: 3px solid green;
-    border-radius: 15px;
-    padding: 10px;
-    transition: .3s ease background-color;
-}
-.voluteen-btn:hover{
-    background-color: black;
+.voluteen-btn .p-button:hover{
+    background-color: green;
     color: white;
 }
-.voluteen-btn a{
-    font-size: 25px;
+.voluteen-btn .p-button{
+    margin: auto;
     color: green;
+    font-size: 30px;
+    font-family: "SourceSansProSemiBold";
+    border: 3px solid green;
+    border-radius: 15px;
+    padding: 10px 10px;
+    transition: .3s ease background-color;
+}
+.events-data .btn{
+    font-family: "SourceSansProBold";
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 40px;
+    transition: 0.3s ease background-color,color;
+}
+.events-data .btn:hover{
+    background-color: black;
+    color: white;
 }
 .main-container{
     display: flex;
@@ -672,9 +683,7 @@ table tr td{
         padding: 20px 25px;
         width: 250px;
     }
-    .voluteen-btn{
-        width: 50%;
-    }
+    
     .parvaah-container{
         padding-top: 70px;
     }
