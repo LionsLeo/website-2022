@@ -627,6 +627,7 @@ table{
     height: 100vh;
     position: relative;
     text-align: center;
+    background-color: white;
 }
 table tr td{
     width: 33.33%;
