@@ -1,6 +1,7 @@
 import * as THREE from './three.js-dev/build/three.module.js'
 import {GLTFLoader} from './three.js-dev/examples/jsm/loaders/GLTFLoader.js'
 import {GUI} from './three.js-dev/dat.gui.module.js'
+import {OrbitControls} from './three.js-dev/examples/jsm/controls/OrbitControls.js'
 
 const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
@@ -45,6 +46,21 @@ const sizes = {
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height,0.1,100)
 camera.position.set(0,3.5,6)
 scene.add(camera)
+
+const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = false
+controls.enablePan = true
+controls.enableRotate = false
+controls.enableZoom = false
+controls.mouseButtons = {
+	LEFT: THREE.MOUSE.PAN,
+	MIDDLE: THREE.MOUSE.DOLLY,
+	RIGHT: THREE.MOUSE.ROTATE
+}
+controls.touches = {
+	ONE: THREE.TOUCH.PAN,
+	TWO: THREE.TOUCH.ROTATE
+}
 
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
