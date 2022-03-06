@@ -2,12 +2,12 @@ import * as THREE from './three.js-dev/build/three.module.js'
 import {GLTFLoader} from './three.js-dev/examples/jsm/loaders/GLTFLoader.js'
 import {GUI} from './three.js-dev/dat.gui.module.js'
 import {OrbitControls} from './three.js-dev/examples/jsm/controls/OrbitControls.js'
+import Stats from './three.js-dev/examples/jsm/libs/stats.module.js'
 
 const canvas = document.querySelector('.webgl')
+const mybody = document.querySelector('.canvas-container')
 const scene = new THREE.Scene()
 
-let INTERSECTED
-var mymess1,mymess2,mymess3
 
 // const gui = new GUI()  //enable this to use dat gui
 // const gltfFolder = gui.addFolder("Model")
@@ -50,8 +50,6 @@ loader1.load('land/land_left.glb', function(gltf){
     root.rotation.y = 1.15
     root.scale.set(0.1,0.1,0.1)
     scene.add(root)
-    root.name = "left city"
-    mymess1 = root.name
 },function(xhr){
     console.log((xhr.loaded/xhr.total*100)+"% loaded")
 }, function(error){
@@ -66,8 +64,6 @@ loader2.load('land/land_center.glb', function(gltf){
     root.rotation.y = 1.15
     root.scale.set(0.1,0.1,0.1)
     scene.add(root)
-    root.name = "center city"
-    mymess2 = root.name
 },function(xhr){
     console.log((xhr.loaded/xhr.total*100)+"% loaded")
 }, function(error){
@@ -81,8 +77,6 @@ loader3.load('land/land_right.glb', function(gltf){
     root.rotation.y = 1.15
     root.scale.set(0.1,0.1,0.1)
     scene.add(root)
-    root.name = "right city"
-    mymess3 = root.name
 },function(xhr){
     console.log((xhr.loaded/xhr.total*100)+"% loaded")
 }, function(error){
@@ -119,6 +113,12 @@ camera.position.set(0,0.5,0.1)
 camera.rotation.x = -1.1
 scene.add(camera)
 
+const stats = new Stats()
+stats.showPanel(0)
+mybody.appendChild( stats.dom );
+
+window.addEventListener( 'resize', onWindowResize );
+
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = false
 controls.enablePan = true
@@ -144,7 +144,20 @@ renderer.shadowMap.enabled = true
 
 function animate(){
     requestAnimationFrame(animate)
+    stats.update()
+    render()
+}
+
+function render(){
     renderer.render(scene, camera)
+}
+
+function onWindowResize() {
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
 
 animate()
