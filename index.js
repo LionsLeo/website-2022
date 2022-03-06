@@ -83,7 +83,7 @@ loader3.load('land/land_right.glb', function(gltf){
     console.log('An Error Occured')
 })
 
-scene.add( new THREE.AxesHelper(500))
+// scene.add( new THREE.AxesHelper(500))
 
 const light = new THREE.DirectionalLight(0xffffff,10)
 light.position.set(2,2,5)
@@ -117,7 +117,29 @@ const stats = new Stats()
 stats.showPanel(0)
 mybody.appendChild( stats.dom );
 
+const raycaster = new THREE.Raycaster()
+const clickMouse = new THREE.Vector2()
+const moveMouse = new THREE.Vector2()
+var draggable = new THREE.Object3D()
+var data
+
 window.addEventListener( 'resize', onWindowResize );
+window.addEventListener('click',event=>{
+    clickMouse.x = (event.clientX/window.innerWidth)*2-1;
+    clickMouse.y = -(event.clientY/window.innerHeight)*2+1;
+    // console.log('in click event')
+    raycaster.setFromCamera(clickMouse, camera);
+    const found = raycaster.intersectObjects(scene.children);
+    // console.log(found)
+    if(found.length>0 && found[0].object){
+        draggable = found[0].object
+        data = found[0].object.userData.name
+        console.log(data)
+    }
+    if(data == 'Cube.001'){
+        location.replace('./pages/events.html')
+    }
+})
 
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = false
