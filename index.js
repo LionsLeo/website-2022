@@ -154,7 +154,7 @@ window.addEventListener('touchstart',event=>{
         console.log(data)
     }
     if(data == 'Cube.001'){
-        location.replace('/hello.html')
+        location.replace('./pages/events.html')
     }
 })
 
