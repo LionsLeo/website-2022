@@ -141,6 +141,23 @@ window.addEventListener('click',event=>{
     }
 })
 
+window.addEventListener('touchstart',event=>{
+    clickMouse.x = (event.pageX/window.innerWidth)*2-1;
+    clickMouse.y = -(event.pageY/window.innerHeight)*2+1;
+    // console.log('in click event')
+    raycaster.setFromCamera(clickMouse, camera);
+    const found = raycaster.intersectObjects(scene.children);
+    // console.log(found)
+    if(found.length>0 && found[0].object){
+        draggable = found[0].object
+        data = found[0].object.userData.name
+        console.log(data)
+    }
+    if(data == 'Cube.001'){
+        location.replace('/hello.html')
+    }
+})
+
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = false
 controls.enablePan = true
