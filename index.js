@@ -28,23 +28,22 @@ const scene = new THREE.Scene()
 //     console.log('An Error Occured')
 // })
 
-const loader = new GLTFLoader()
-loader.load('land/land.glb', function(gltf){
-    console.log(gltf)
-    const root = gltf.scene
-    root.rotation.y = 1.15
-    root.scale.set(0.1,0.1,0.1)
-    scene.add(root)
-    //console.log(root.name)
-},function(xhr){
-    console.log((xhr.loaded/xhr.total*100)+"% loaded")
-}, function(error){
-    console.log('An Error Occured')
-})
-
+// const loader = new GLTFLoader()
+// loader.load('land/land.glb', function(gltf){
+//     console.log(gltf)
+//     const root = gltf.scene
+//     root.rotation.y = 1.15
+//     root.scale.set(0.1,0.1,0.1)
+//     scene.add(root)
+//     //console.log(root.name)
+// },function(xhr){
+//     console.log((xhr.loaded/xhr.total*100)+"% loaded")
+// }, function(error){
+//     console.log('An Error Occured')
+// })
 
 const loader1 = new GLTFLoader()
-loader1.load('land/land_left.glb', function(gltf){
+loader1.load('land/new.glb', function(gltf){
     console.log(gltf)
     const root = gltf.scene
     root.rotation.y = 1.15
@@ -57,40 +56,54 @@ loader1.load('land/land_left.glb', function(gltf){
 })
 loader1.castShadow=true
 
-const loader2 = new GLTFLoader()
-loader2.load('land/land_center.glb', function(gltf){
-    console.log(gltf)
-    const root = gltf.scene
-    root.rotation.y = 1.15
-    root.scale.set(0.1,0.1,0.1)
-    scene.add(root)
-},function(xhr){
-    console.log((xhr.loaded/xhr.total*100)+"% loaded")
-}, function(error){
-    console.log('An Error Occured')
-})
+// const loader1 = new GLTFLoader()
+// loader1.load('land/land_left.glb', function(gltf){
+//     console.log(gltf)
+//     const root = gltf.scene
+//     root.rotation.y = 1.15
+//     root.scale.set(0.1,0.1,0.1)
+//     scene.add(root)
+// },function(xhr){
+//     console.log((xhr.loaded/xhr.total*100)+"% loaded")
+// }, function(error){
+//     console.log('An Error Occured')
+// })
+// loader1.castShadow=true
 
-const loader3 = new GLTFLoader()
-loader3.load('land/land_right.glb', function(gltf){
-    console.log(gltf)
-    const root = gltf.scene
-    root.rotation.y = 1.15
-    root.scale.set(0.1,0.1,0.1)
-    scene.add(root)
-},function(xhr){
-    console.log((xhr.loaded/xhr.total*100)+"% loaded")
-}, function(error){
-    console.log('An Error Occured')
-})
+// const loader2 = new GLTFLoader()
+// loader2.load('land/land_center.glb', function(gltf){
+//     console.log(gltf)
+//     const root = gltf.scene
+//     root.rotation.y = 1.15
+//     root.scale.set(0.1,0.1,0.1)
+//     scene.add(root)
+// },function(xhr){
+//     console.log((xhr.loaded/xhr.total*100)+"% loaded")
+// }, function(error){
+//     console.log('An Error Occured')
+// })
+
+// const loader3 = new GLTFLoader()
+// loader3.load('land/land_right.glb', function(gltf){
+//     console.log(gltf)
+//     const root = gltf.scene
+//     root.rotation.y = 1.15
+//     root.scale.set(0.1,0.1,0.1)
+//     scene.add(root)
+// },function(xhr){
+//     console.log((xhr.loaded/xhr.total*100)+"% loaded")
+// }, function(error){
+//     console.log('An Error Occured')
+// })
 
 // scene.add( new THREE.AxesHelper(500))
 
-const light = new THREE.DirectionalLight(0xffffff,10)
+const light = new THREE.DirectionalLight(0xffffff,1)
 light.position.set(2,2,5)
 light.castShadow = true;
 scene.add(light)
 
-const light1 = new THREE.DirectionalLight(0xffffff,10)
+const light1 = new THREE.DirectionalLight(0xffffff,1)
 light1.position.set(-2,-2,5)
 light1.castShadow = true;
 scene.add(light1)
