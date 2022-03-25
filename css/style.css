@@ -459,14 +459,19 @@ a{
     width: fit-content;
     text-align: center;
 }
-.parvaah-logo img{
+.parvaah-logo .logo-parvaah{
     padding: 0 25px;
     width: 300px;
+}
+#sustain{
+    padding: 0 25px;
+    width: 250px;
 }
 .parvaah-desc p{
     font-size: 25px;
     padding: 50px 100px;
     font-family: "SourceSansProSemiBold";
+    color: white;
 }
 .voluteen-btn .p-button:hover{
     background-color: green;
@@ -502,11 +507,12 @@ a{
     padding: 50px 50px;
 }
 .event-card{
-    background-color: grey;
+    background-color: white;
     width: 270px;
     height: 400px;
     margin: 10px;
     border-radius: 15px;
+    overflow: hidden;
 }
 .event-card h1{
     padding: 1px 10px;
@@ -716,9 +722,14 @@ table tr td{
         font-size: 20px;
         padding: 50px 50px;
     }
-    .parvaah-logo img{
+    .parvaah-logo .logo-parvaah{
         padding: 20px 25px;
         width: 250px;
+    }
+
+    #sustain{
+        padding: 20px 25px;
+        width: 225px;
     }
     
     .parvaah-container{
