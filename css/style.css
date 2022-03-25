@@ -850,6 +850,43 @@ table tr td{
 }
 /* End Pro Shows page styling */
 
+#sponsors {
+    /* background-image: url("../assets/ecorun_2019.png"); */
+    background-color: #161c2c;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+.sponsors-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.years {
+    color: aliceblue;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsors-head {
+    margin: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
 /*Keyframes*/
 @keyframes hamburger_pulse {
     0%{

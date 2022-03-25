@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sponsors</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .year{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!--PreLoader-->
+    <!-- <div id="preloader">
+      <h1>Loading...</h1>
+    </div> -->
+    <!--End PreLoader-->
+    <!--Header-->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="../index.html">
+              <h1>Symphony</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="../index.html" data-after="Home">Home</a></li>
+              <li><a href="./events.html" data-after="Events">Events</a></li>
+              <li><a href="./proshows.html" data-after="Pro-Shows">Pro-Shows</a></li>
+              <li><a href="./parvaah.html" data-after="Parvaah">Parvaah</a></li>
+              <li><a href="./syahi.html" data-after="Syahi">Syahi</a></li>
+              <li><a href="./shield.html" data-after="Shield">Shield</a></li>
+              <li><a href="#sponsors" data-after="Sponsors">Sponsors</a></li>
+              <li><a href="./rules.html" data-after="Rules">Rules</a></li>
+              <li>
+                <a href="./reachus.html" data-after="Reachus">Reach Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Header-->
+
+    <section id="sponsors">
+      <div class="sponsors sponsors-container">
+        <div>
+          <h1 class="sponsors-head">Sponsors</h1>
+          <div class="years">
+            <div class="year" id="2018" onclick="javascript:dissappearSponsors('s_2018','s_2019','s_2020','s_2021')">2018</div>
+            <div class="year" id="2019" onclick="javascript:dissappearSponsors('s_2019','s_2018','s_2020','s_2021')">2019</div>
+            <div class="year" id="2020" onclick="javascript:dissappearSponsors('s_2020','s_2018','s_2019','s_2021')">2020</div>
+            <div class="year" id="2021" onclick="javascript:dissappearSponsors('s_2021','s_2018','s_2019','s_2020')">2021</div>
+          </div>
+         
+        </div>
+        <div>
+          <div class="sponsors-logos" id="s_2018">
+          <img src="../assets/insta.png" />
+          <img src="../assets/facebook.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        <div class="sponsors-logos" id="s_2019">
+          <img src="../assets/twitter.png" />
+          <img src="../assets/facebook.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        <div class="sponsors-logos" id="s_2020">
+          <img src="../assets/facebook.png" />
+          <img src="../assets/insta.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        <div class="sponsors-logos" id="s_2021">
+          <img src="../assets/facebook.png" />
+          <img src="../assets/twitter.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <script src="../js/app.js"></script>
+    <script>
+      window.onload=function(){
+    var x = document.getElementById('s_2021');
+    var y=document.getElementById('s_2018');
+    var z=document.getElementById('s_2019');
+    var w=document.getElementById('s_2020');
+    x.style.display = 'block';
+    y.style.display='none';
+    z.style.display='none';
+    w.style.display='none';
+  }
+
+function dissappearSponsors(yr1,yr2,yr3,yr4) 
+{
+
+  var x = document.getElementById(yr1);
+  var y=document.getElementById(yr2);
+  var z=document.getElementById(yr3);
+  var w=document.getElementById(yr4);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    y.style.display='none';
+    z.style.display='none';
+    w.style.display='none';
+  } else {
+    x.style.display = 'none';
+  }
+ 
+}
+    </script>
+    
+  </body>
+</html>
