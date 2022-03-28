@@ -322,7 +322,7 @@ a{
 }
 
 #shield-bg{
-    background-image: url('../assets/shield.png');
+    background-image: url('../assets/Shield.png');
 }
 
 #syahi-bg{
@@ -336,6 +336,7 @@ a{
 
 /*Events styling*/
 #services .service{
+    background-color: #fff5e8;
     flex-direction: column;
     max-width: 1500px;
     margin: 0 auto;
@@ -368,10 +369,13 @@ a{
     position: relative;
     width: 300px;
     height: 400px;
-    background: linear-gradient(#2196f3,#2196f3 30%, #1d3548 30%, #1d3548);
+    background: #d7fff7;
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
+-webkit-box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
+-moz-box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
 }
 .card-container .cards .imgBx 
 {
@@ -427,9 +431,9 @@ a{
 }
 .card-container .cards .content .details h2
 {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 500;
+    color: black;
+    font-size: 2.5em;
+    font-family: "SourceSansProBold";
 }
 .card-container .cards .content .details h2 span
 {
@@ -455,10 +459,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #294d69;
+    background: #84ffe6;
     border-radius: 50%;
     font-size: 1.5em;
-    color: #fff;
+    color: black;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -545,14 +549,39 @@ a{
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
-.car-1{
-    background-image: url('../assets/ecorun_2019.png');
+
+.pic-1{
+    background-image: url('../assets/parvaah/ecorun.png');
+}
+.pic-2{
+    background-image: url('../assets/parvaah/signal.png');
+}
+.pic-3{
+    background-image: url('../assets/parvaah/secret.png');
+}
+.pic-4{
+    background-image: url('../assets/parvaah/diwali19.png');
+}
+.pic-5{
+    background-image: url('../assets/parvaah/tree19.png');
+}
+.pic-6{
+    background-image: url('../assets/parvaah/know.png');
+}
+.pic-7{
+    background-image: url('../assets/parvaah/diwali20.png');
+}
+.pic-8{
+    background-image: url('../assets/parvaah/beaut.png');
+}
+.pic-9{
+    background-image: url('../assets/parvaah/mangroove.png');
 }
 /*End Parvaah Page Styling*/
 
 /* Reach Us Page Styling*/
 #rup-body{
-    background-color: #03a9f4;
+    background-color: #fff5e8;
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -602,11 +631,19 @@ a{
 }
 .rup-card .tagline{
     text-align: center;
+    max-width: 250px;
 }
 .rup-card .tagline h2{
     font-size:18px;
     font-family: "SourceSansProItalic";
     padding-bottom: 10px;
+}
+.footer{
+    padding: 50px 0px;
+    text-align: center;
+}
+.footer img{
+    width: 500px;
 }
 /*End Reach Us Page Styling*/
 
@@ -646,12 +683,17 @@ a{
 /* End Rules styling*/
 
 /*Events Page Styling*/
+.events-container{
+    background-color: white;
+    background-image: url('../assets/events/bg.gif');
+    background-size: cover;
+}
 table{
     width: 100%;
     height: 100vh;
     position: relative;
     text-align: center;
-    background-color: white;
+    /* background-color: white; */
 }
 table tr td{
     width: 33.33%;
@@ -696,6 +738,16 @@ table tr td{
 /*End Events Page Styling*/
 
 /* Pro Shows page styling */
+.heading-ps{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.heading-ps h1{
+    font-family: "SourceSansProBold";
+    font-size: 5rem;
+}
+
 .card-container{
     display: flex;
     justify-content: center;
@@ -746,6 +798,25 @@ table tr td{
     background-color: #1b1215;
     background-image: url("../assets/pro_shows/kkbg.png");
     background-size: cover;
+    margin: 50px 150px;
+    box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+    -webkit-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+    -moz-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+}
+
+#p91{
+    background-color: #1b1626;
+    background-image: url("../assets/pro_shows/p91bg.png");
+    background-size: cover;
+    box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+    -webkit-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+    -moz-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
+}
+
+#kryso{
+    background-color: #400000;
+    background-image: url("../assets/pro_shows/krysobg.png");
+    background-size: cover;
     box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
     -webkit-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
     -moz-box-shadow: 0px 28px 53px -8px rgba(27,18,21,0.49);
@@ -789,9 +860,17 @@ table tr td{
     line-height: 1em;   
 }
 
-.card .content-ps p{
+.card .content-ps h3{
     color: #fff;
     font-family: "SourceSansProSemiBold";
+    font-size: 2rem;
+    line-height: 1em; 
+    padding: 3px 0px;  
+}
+
+.card .content-ps p{
+    color: #fff;
+    font-family: "SourceSansProSemiBoldItalic";
     font-size: 1.5rem;
     padding: 10px 0px;
 }
@@ -817,6 +896,9 @@ table tr td{
         max-width: 600px;
         transition: 0.5s;
         align-items: flex-start;
+    }
+    #kk{
+        margin: 20px 18px;
     }
     .card img{
         height: 300px;
@@ -925,6 +1007,12 @@ table tr td{
 }
 
 @media only screen and (max-width: 768px){
+    .container{
+        align-items: flex-start;
+    }
+    .syahi-mob{
+        padding-top: 100px;
+    }
     .parvaah-desc p{
         font-size: 20px;
         padding: 50px 50px;
@@ -933,12 +1021,22 @@ table tr td{
         padding: 20px 25px;
         width: 250px;
     }
-
+    .events-container{
+        background-color: white;
+        background-image: url('../assets/events/bgmob.gif');
+        background-size: cover;
+    }
+    .webgl{
+        background-image: url('../assets/homemob.png');
+        background-size: cover;
+    }
     #sustain{
         padding: 20px 25px;
         width: 225px;
     }
-    
+    .cell-1{
+        display: none;
+    }
     .parvaah-container{
         padding-top: 70px;
     }
@@ -987,6 +1085,9 @@ table tr td{
         /* background-color: black; */
         background-image: url('../assets/loading/portrait.gif');
         background-size: cover;
+    }
+    .footer img{
+        width: 250px;
     }
 }
 /*End Media Query for Desktop*/
